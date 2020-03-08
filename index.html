@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="tip-container">
+    <div id="tip-content">
+      <span id="tip-header">
+        <h1>TIP CALCULATOR</h1>
+      </span>
+      <div id="tip-input">
+        <div id="tip-bill">
+          <form id="form-tip" action="#">
+
+            <p>How much was your bill ?</p>
+            <input id="tip-bill-input" type="number" placeholder="0.00€" value="">
+
+            <p>How much do you want to tip ?</p>
+            <select name="bill-service" id="tip-service-quality"
+              <option type="number" value="0"> 0% </option>
+              <option type="number" value="0.1"> 10% </option>
+              <option type="number" value="0.2"> 20% </option>
+              <option type="number" value="0.3"> 30% </option>
+              <option type="number" value="0.4"> 40% </option>
+              <option type="number" value="0.5"> 50% </option>
+              <option type="number" value="0.6"> 60% </option>
+              <option type="number" value="0.7"> 70% </option>
+              <option type="number" value="0.8"> 80% </option>
+            </select>
+            <p>How many people are sharing the bill?</p>
+            <input id="tip-people-sharing" type="number" placeholder="0" value="1">
+            <p style="font-size: 0.7em; color: grey;">minimum one person</p>
+           
+          </form>
+        </div>
+        <div id="button-footer-container">
+            <button class="button-down" id="submit-button" type="button">Submit</button>
+        <button class="button-down" id="reset-button" type="button">Reset</button>
+          </div> 
+      </div>
+      <div id="total-billing-page" class="animation-slideIn">
+        <div id="billing-page-container">
+          <span id="billing-page-header">
+            <p id="billing-page-title">TIP AMOUNT</p>
+          </span>
+          <p id="billing-tip-due-text-1"></p>
+      </div>
+      <div id="total-page-container">
+        <span id="billing-page-header">
+          <p id="billing-page-title">TOTAL + TIP</p>
+        </span>
+        <p id="total-billing-due-text"></p>
+    </div>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+
+</html>
